@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#message='App für die @JavaLandConf erweitern: Hackathon von @JUG_DA und @JUG_KL am 05.03. in Ffm.: http://www.jug-da.de/2016/03/DukeCon-Hackathon/'
+message='Auch dieses Jahr gibt es wieder viele Community-Aktivitäten auf der @JavaLandConf - z.B. den permanenten Hackergarten von @aalmiray, am Dienstag https://programm.javaland.eu/2019/#/scheduledEvent/568959 und Mittwoch https://programm.javaland.eu/2019/#/scheduledEvent/568964'
+
+echo $message | wc -c
+
+exec ../scripts/TwitterSimpleUpdate.groovy "$message"
